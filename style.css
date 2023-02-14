@@ -1,0 +1,168 @@
+/**
+==========================Variables==================
+**/
+:root{
+    --color-primary-1: hsl(136, 65%, 51%);
+    --color-primary-2:hsl(192, 70%, 51%);  
+    --color-primary-3:hsl(233, 26%, 24%);  
+
+    --color-neutral-1:hsl(0,0%,100%);
+    --color-neutral-2:hsl(0,0%,98%);
+    --color-neutral-3:hsl(220,16%,96%);
+    --color-neutral-4:hsl(233,8%,62%);
+
+    --font-primary:'public sans',sans-serif;
+}
+/**
+==============Normalization=======================
+**/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: var(--font-primary);
+    font-size: 17px;    
+}
+/**
+=================Reusable=================
+**/
+.container{
+    max-width: 1300px;
+    margin:auto;
+}
+.btn{
+    padding: 15px 20px;
+    border: none;
+    color:var(--color-neutral-1);
+    background-image:linear-gradient(to right bottom,var(--color-primary-1),var(--color-primary-2));
+    border-radius: 25px;
+}
+/**
+==============Header style===============
+**/
+header .container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a{
+    padding-top: 20px 0;
+    color:var(--color-neutral-4)
+}
+nav{
+    display:flex;
+    gap:20px;
+}
+
+/**
+=================Hero section=================
+**/
+.hero-section .container{
+    display:flex;
+}
+.hero-section{
+    background-color: var(--color-neutral-2);
+    background-repeat: no-repeat;
+    background-image: url('./images/bg-intro-desktop.svg');
+    background-position: right;
+    background-size: contain;
+    position: inherit;
+}
+.hero-section .hero-content{
+    width:30%;
+    padding:150px 0;
+}
+.hero-content .hero-title{
+    font-size: 45px;
+    font-weight: 300;
+}
+.hero-content .hero-text{
+    margin:30px 0;
+    color:var(--color-neutral-4);
+    line-height:1.7;
+}
+
+header{
+    position:relative;
+    z-index: 2;
+    background-color: white;
+}
+.hero-banner img{
+    position: absolute;
+    right: 0;
+    top:-100px;
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+.why-us{
+    background-color:var(--color-neutral-3);
+    margin:auto;
+    padding:150px ,0;
+}
+
+.why-us h1{
+    font-size: 35px;
+    margin-bottom: 50px;
+    font weight: 300px;
+}
+ .why-us p{
+     margin:20px,0;
+     width:50%;
+     line-height: 1.7;
+     font-size: 17px;
+     color: var(--color-neutral-4);
+ }
+
+ .why-us .services
+ {
+    display: flex;
+    gap:30px;
+    margin-top:50px ;
+
+ }
+ .service-title{
+    margin:15px 0;
+    font-size: 25px;
+ }
+.service-description{
+    color:var(--color-neutral-4);
+    line-height: 1.7;
+}
+
+
+
+.latest-article{
+    padding: 150px;
+}
+.articles {
+display:flex;
+gap:30px;
+}
+
+.article img{
+    width:300px;
+}
+
+.articles .article{
+    width:25%;
+}
+ 
+.article{
+    height:auto;
+}
+.mobile-menu{
+    display:none;
+}
